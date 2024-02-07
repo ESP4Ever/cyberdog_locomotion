@@ -16,38 +16,38 @@ There are two scenarios to deploy the code, one is in simulation and the other o
 ### Install Dependencies
 - Eigen
 ```
-$ git clone https://gitlab.com/libeigen/eigen.git
-$ cd eigen
-$ git checkout 3.3.7
-$ mkdir build
-$ cd build
-$ cmake ..
-$ sudo make install
+git clone https://gitlab.com/libeigen/eigen.git
+cd eigen
+git checkout 3.3.7
+mkdir build
+cd build
+cmake ..
+sudo make install
 ```
 - yaml-cpp
 ```
-$ git clone https://github.com/jbeder/yaml-cpp.git
-$ cd yaml-cpp
-$ git checkout yaml-cpp-0.6.3
-$ mkdir build
-$ cd build
-$ cmake -DYAML_BUILD_SHARED_LIBS=ON ..
-$ make -j4
-$ sudo make install
+git clone https://github.com/jbeder/yaml-cpp.git
+cd yaml-cpp
+git checkout yaml-cpp-0.6.3
+mkdir build
+cd build
+cmake -DYAML_BUILD_SHARED_LIBS=ON ..
+make -j4
+sudo make install
 ```
 - JAVA 11 (only for lcm data log and review)
 ```
-$ sudo apt install openjdk-11-jdk
+sudo apt install openjdk-11-jdk python3-dev gccgo-go libglib2.0-dev lua5.1 lua5.1-dev
 ```
 - lcm
 ```
-$ git clone https://github.com/lcm-proj/lcm.git
-$ cd lcm
-$ mkdir build
-$ cd build
-$ cmake -DLCM_ENABLE_JAVA=ON ..
-$ make
-$ sudo make install
+git clone https://github.com/lcm-proj/lcm.git
+cd lcm
+mkdir build
+cd build
+cmake -DLCM_ENABLE_JAVA=ON -DPython3_EXECUTABLE=/path/to/bin/python3 ..
+make
+sudo make install
 ```
 
 - docker (only for cross-compiling)
