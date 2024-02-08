@@ -109,12 +109,12 @@ python3 src/cyberdog_ros2/cyberdog_gazebo/script/launchsim.py
 ### Real Robot
 In order to allow compiled products to run directly on real robots, you need to do cross-compilation in a specific docker environment:
 ```
-docker run -it --rm --name alan -v your_own_path/cyberdog_locomotion:/work/build_farm/workspace/cyberdog cr.d.xiaomi.net/athena/athena_cheetah_arm64:2.0 /bin/bash
+docker run -it --rm --name alan -v {your_own_path}/cyberdog_locomotion:/work/build_farm/workspace/cyberdog cr.d.xiaomi.net/athena/athena_cheetah_arm64:2.0 /bin/bash
 cd /work/build_farm/workspace/cyberdog/
 mkdir onboard-build
 cd onboard-build
 ```
-**Note**: your_own_path/cyberdog_locomotion needs to be an absolute path.
+**Note**: {your_own_path}/cyberdog_locomotion needs to be an absolute path.
 - For Cyberdog:
 ```
 cmake -DCMAKE_TOOLCHAIN_FILE=/usr/xcc/aarch64-openwrt-linux-gnu/Toolchain.cmake -DONBOARD_BUILD=ON -DBUILD_FACTORY=ON -DBUILD_CYBERDOG2=OFF ..
