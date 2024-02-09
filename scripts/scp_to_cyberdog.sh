@@ -16,7 +16,7 @@ else
 	exit
 fi
 
-ssh root@${ip} "ps | grep -E 'manager|mit|imu|cyberdog_control' | grep -v grep | awk '{print \$1}' | xargs kill -9"
+ssh root@${ip} "ps | grep -E 'manager|mit|imu|cyberdog_control' | grep -v grep | awk '{print $1}' | xargs kill -9"
 
 if scp root@${ip}:/mnt/UDISK/test/manager.sh ./ >&/dev/null ; then 
 	echo "copy to /mnt/UDISK !";
