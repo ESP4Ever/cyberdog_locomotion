@@ -1,6 +1,6 @@
 CYBERDOG LOCOMOTION
 ---
-Locomotion control algorithm for quadrupedal robots of Xiaomi Robotics Lab, based on the MIT [Cheetah Software](https://github.com/mit-biomimetics/Cheetah-Software) open-source project and mainly includes 5 modules as below:
+Locomotion control algorithm for quadrupedal robots of Xiaomi Robotics Lab, based on the [MIT Cheetah Software](https://github.com/mit-biomimetics/Cheetah-Software) open-source project and mainly includes 5 modules as below:
 - common: shared code for all other modules
 - control: control algorithm
 - hardware: hardware-related code
