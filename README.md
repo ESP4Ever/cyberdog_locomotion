@@ -7,9 +7,9 @@ Locomotion control algorithm for quadrupedal robots of Xiaomi Robotics Lab, base
 - simbridge: interface code for bridging to external simulators
 - scripts: useful script tools
 
-:warning:**Warning**：This control algorithm was only fully tested on Cyberdog v2. Regarding Cyberdog v1, not all functionalities are guaranteed, so please be cautious to use!
-
 For more details refer to the document [User Interface of CyberDog Locomotion Module](https://github.com/ESP4Ever/blogs/blob/rolling/docs/en/cyberdog_loco.md)
+
+:warning:**Warning**：This control algorithm was only fully tested on Cyberdog v2. Regarding Cyberdog v1, not all functionalities are guaranteed, so please be cautious to use!
 
 ---
 ## Deploy
