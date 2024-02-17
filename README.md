@@ -68,7 +68,7 @@ wget https://cdn.cnbj2m.fds.api.mi-img.com/os-temp/loco/loco_arm64_20220118.tar
 docker load --input loco_arm64_20220118.tar
 docker images
 ```
-or you can make the docker image accordting to the attached [DockerFile](./docker/Dockerfile). For more details, please refer to the [instruction document](./docker/dockerfile_instructions_en.md).
+or you can make the docker image accordting to the attached [DockerFile](./docker/Dockerfile). For more details, please refer to the [instruction document](./docker/dockerfile_instructions.md).
 
 ### Simulation
 Compile on the external PC, and the compiled product is only for simulation usage, **CAN NOT** be deployed on the real robot. First, download the code:
@@ -87,7 +87,7 @@ Note： if encounter **fatal error: GL/glut.h: No such file or directory**，try
 ```
 sudo apt-get install freeglut3-dev
 ```
-Above is for checking if the code is integral and compilable. To run simulation in Gazebo, the whole [cyberdog_sim](https://github.com/MiRoboticsLab/cyberdog_sim) repository should be downloaded which already includes this code inside and compiled in ROS2 environment. Please refer to the ReadMe of the [cyberdog_sim](https://github.com/MiRoboticsLab/cyberdog_sim) project for more details:
+Above is for checking if the code is integral and compilable. To run simulation in Gazebo, the whole [cyberdog_sim](https://github.com/ESP4Ever/cyberdog_sim) repository should be downloaded which already includes this code inside and compiled in ROS2 environment. Please refer to the ReadMe of the project for more details:
 ```
 git clone https://github.com/MiRoboticsLab/cyberdog_sim.git
 cd cyberdog_sim
