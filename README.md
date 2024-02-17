@@ -9,6 +9,8 @@ Locomotion control algorithm for quadrupedal robots of Xiaomi Robotics Lab, base
 
 :warning:**Warning**：This control algorithm was only fully tested on Cyberdog v2. Regarding Cyberdog v1, not all functionalities are guaranteed, so please be cautious to use!
 
+[Locomotion Module Documentation](https://github.com/ESP4Ever/blogs/blob/rolling/docs/en/cyberdog_loco.md)
+
 ---
 ## Deploy
 There are two scenarios to deploy the code, one is in simulation and the other on real robots. Considering the limited computing resources of robot embedded PC, the code is always preferred to be compiled on powerful external PC in both use cases. So, first, you need to install dependencies on the external PC:
